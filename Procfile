@@ -1,0 +1,1 @@
+web: gunicorn lojinha_da_esquina.wsgi:application
