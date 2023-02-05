@@ -1,108 +1,87 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Lojinha Da Esquina
 
-Welcome RenatoMignella,
+- Lojinha Da Esquina is a Django Python blogecomerce with the objective of sell Brazilian products 
+- Users can ****
+- the Ecomerce **** 
+###
+- The live link can be found here - [Lojinha Da Esquina]() 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+![Responsice Mockup](/media/images/BlogImage.JPG)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Menu and navigation
 
-`python3 -m http.server`
+At the initial page you'll have "Home" "Register"and "Login"
+######
+The user can access the post at the home page as preavious image once logged the user have the possibility of Like posts and make commnets.
 
-A blue button should appear to click: _Make Public_,
+<img alt="Win" src="media/images/LoggedUserCommentAndLikeImage.JPG" width="80%">
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#
+- Register
 
-A blue button should appear to click: _Make Public_,
+The user will be able to register at the main page.
 
-Another blue button should appear to click: _Open Browser_.
+<img alt="Win" src="media/images/BlogRegisterImage.JPG" width="80%">
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+##
+<img alt="Win" src="media/images/RegisterPageImage.JPG" width="80%">
 
-To log into the Heroku toolbelt CLI:
+#
+ Login
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The user will be able to login once registered 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+<img alt="Win" src="media/images/BlogLogImage.JPG" width="80%">
 
-## Release History
+##
+<img alt="Win" src="media/images/LogPageImage.JPG" width="80%">
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## User Stories 
+####
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+<img alt="Welcome" src="media/images/UserStories.JPG" width="80%">
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+####
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+ #### Deployment 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+ Heroku Deploying:
+* Visit the [Heroku](https://dashboard.heroku.com/login) site and create an account
+* Click the "New" Button
+* Click the "Create new app" button
+* Provide a name for the app in the App name input field
+* Select your region from the choose region dropdown menu 
+* Click the "Create App" button
+* Once redirected, proceed to the settings tab
+* Click on the "config vars" button
+* Supply a KEY of `PORT` and it's value of `8000`. The click the "add" button
+* Next step is to add Buildpacks, click the "Add Buildpack" button
+* The `python` buildpack needs to be added first then the `nodejs` buildpack
+* Once the buildpacks have completed, go to the deploy screen, once in the deploy screen, select GitHub as the deployment method and connect your GitHub profile
+* Search for the repository that you wish to deploy to Heroku and click "connect"
+* Once your repository is connected to Heroku you can choose to either manually or automatically deploy your app.
+* By selecting automatic deploys, Heroku will build a new version of the app each time a change has been pushed to the repository
+* Manual deploys allow you to build a new version of your app whenever you click manual deploy
+* If your build is successful you will then be able to visit the live site by clicking the link that is provided to you by Heroku
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Command to add packages to requirements.txt, `pip3 freeze --local > requirements.txt` 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+    
+ 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+  #### Credits
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+  
+   - [Code Institute](https://www.CodeInstitute.net) Based on "I Think Therefore I Blog module".
+   - [Youtube](https://www.youtube.com/) 
+   - [Google](https://www.Google.com/) Images source.
+   
+   
